@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vôlei de Quadra | História e Inspiração</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #172b45;
+  line-height: 1.6;
+}
+
+header {
+  background: #102b48;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffcc42;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc42;
+}
+
+.hero {
+  min-height: 450px;
+  background: linear-gradient(90deg,
+    rgba(10,30,55,.9),
+    rgba(10,30,55,.35)),
+    url("C:\laura rolon\vol_brasil_atenas2_get_60.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 60px 10%;
+  color: white;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 65px);
+  max-width: 700px;
+  line-height: 1.1;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 19px;
+  max-width: 600px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  background: #ffcc42;
+  color: #102b48;
+  padding: 13px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 75px 10%;
+}
+
+.section-title {
+  font-size: 34px;
+  color: #102b48;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  max-width: 850px;
+  margin: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0,0,0,.08);
+}
+
+.card h3 {
+  color: #e19b00;
+  margin-bottom: 10px;
+}
+
+.history {
+  background: #e8eef6;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 35px;
+  margin-top: 30px;
+}
+
+.history-content img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.rules {
+  background: white;
+}
+
+.rules ul {
+  max-width: 800px;
+  margin: 25px auto;
+  list-style: none;
+}
+
+.rules li {
+  background: #edf3fa;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-left: 5px solid #ffcc42;
+  border-radius: 6px;
+}
+
+.inspiration {
+  background: #e8eef6;
+}
+
+.athletes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 35px;
+}
+
+.athlete {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0,0,0,.1);
+}
+
+.athlete img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.athlete-info {
+  padding: 25px;
+}
+
+.athlete-info h3 {
+  color: #102b48;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.curiosities {
+  background: white;
+}
+
+.curiosity {
+  background: #102b48;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+footer {
+  background: #102b48;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+footer span {
+  color: #ffcc42;
+}
+
+@media(max-width: 700px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .history-content,
+  .athletes {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 55px 7%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🏐 VÔLEI DE QUADRA</div>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#historia">História</a>
+    <a href="#regras">Regras</a>
+    <a href="#inspiracoes">Ídolos</a>
+    <a href="#curiosidades">Curiosidades</a>
+  </nav>
+</header>
+
+<div class="hero" id="inicio">
+  <div>
+    <h1>Uma história de paixão e superação!</h1>
+    <p>Conheça a história do voleibol, suas regras e os atletas que inspiram gerações dentro das quadras.</p>
+    <a href="#historia" class="btn">Conheça a história</a>
+  </div>
+</div>
+
+<section id="historia" class="history">
+  <h2 class="section-title">A história do vôlei</h2>
+  <div class="history-content">
+    <div>
+      <h3>Quem criou o voleibol?</h3>
+      <p>O voleibol foi criado em 1895 por William George Morgan, professor de Educação Física nos Estados Unidos, na Associação Cristã de Moços.</p>
+      <br>
+      <p>Inicialmente, o esporte recebeu o nome de Mintonette. Seu objetivo era criar uma atividade física menos intensa que o basquete, mas que também proporcionasse movimento e diversão.</p>
+      <br>
+      <p>Com o passar do tempo, o esporte ganhou popularidade e passou a ser conhecido mundialmente como volleyball.</p>
+    </div>
+    <img src="C:\laura rolon\image_processing20220927-1839489-z3r1a8.jpg" alt="William George Morgan">
+  </div>
+</section>
+
+<section class="rules" id="regras">
+  <h2 class="section-title">Principais regras do vôlei</h2>
+  <p class="intro">O voleibol possui regras que organizam a partida e garantem uma competição justa entre as equipes.</p>
+
+  <ul>
+    <li>🏐 Cada equipe possui 6 jogadores em quadra.</li>
+    <li>🏐 O objetivo é fazer a bola tocar o chão da quadra adversária.</li>
+    <li>🏐 Cada equipe pode realizar até 3 toques antes de devolver a bola.</li>
+    <li>🏐 A partida é disputada em melhor de 5 sets.</li>
+    <li>🏐 Os quatro primeiros sets vão até 25 pontos.</li>
+    <li>🏐 O quinto set vai até 15 pontos.</li>
+    <li>🏐 É necessário ter 2 pontos de diferença para vencer um set.</li>
+    <li>🏐 Quando uma equipe recupera o direito de sacar, seus jogadores realizam o rodízio.</li>
+    <li>🏐 O líbero é especializado em defesa e recepção.</li>
+  </ul>
+</section>
+
+<section class="inspiration" id="inspiracoes">
+  <h2 class="section-title">Nossas grandes inspirações</h2>
+  <p class="intro">O Brasil revelou grandes talentos que marcaram a história do voleibol mundial. Dois deles são Gabi Guimarães e Giba.</p>
+
+  <div class="athletes">
+
+    <div class="athlete">
+      <img src="C:\laura rolon\q9quxlrldqj7wzvchmgn.jpg" alt="Gabi Guimarães">
+      <div class="athlete-info">
+        <h3>Gabi Guimarães</h3>
+        <p>Uma das maiores referências do vôlei feminino brasileiro. Gabi é conhecida por sua dedicação, liderança, habilidade e talento em quadra.</p>
+        <br>
+        <p>Ela inspira jovens atletas a acreditarem em seus sonhos e trabalharem para alcançar seus objetivos.</p>
+      </div>
+    </div>
+
+    <div class="athlete">
+      <img src="C:\laura rolon\1200x900-2025-04-24T145131.585.jpg" alt="Giba">
+      <div class="athlete-info">
+        <h3>Giba</h3>
+        <p>Gilberto Amauri de Godoy Filho, conhecido como Giba, é uma lenda do voleibol brasileiro.</p>
+        <br>
+        <p>Foi campeão olímpico em Atenas, em 2004, e conquistou diversos títulos pela seleção brasileira. Sua trajetória representa talento, dedicação e superação.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="curiosidades" class="curiosities">
+  <h2 class="section-title">Curiosidades sobre o vôlei</h2>
+  <div class="cards">
+    <div class="curiosity">
+      <h2>1895</h2>
+      <p>Ano em que o voleibol foi criado.</p>
+    </div>
+    <div class="curiosity">
+      <h2>1964</h2>
+      <p>Ano da estreia do vôlei nos Jogos Olímpicos.</p>
+    </div>
+    <div class="curiosity">
+      <h2>6 jogadores</h2>
+      <p>Quantidade de atletas de cada equipe em quadra.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <h2>🏐 Vôlei de Quadra</h2>
+  <p>Esporte, união, respeito e superação!</p>
+  <br>
+  <p>Projeto educativo sobre a história do voleibol.</p>
+  <p><span>Trabalho feito por Laura e Emilly</span></p>
+</footer>
+
+</body>
+</html>
